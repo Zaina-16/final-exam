@@ -1,0 +1,59 @@
+/* ألوان عامة */
+:root {
+    --pink: #ffb6c1;
+    --yellow: #ffd54f;
+    --purple: #4a235a;
+}
+
+/* خلفية الموقع */
+body {
+    background-color: #fff7fb;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--purple) !important;
+}
+
+.navbar a:hover {
+    color: var(--yellow) !important;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1497034825429-c343d7c6a68f');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.2s;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Cards */
+.feature-card {
+    border-radius: 15px;
+    transition: 0.3s;
+    background-color: white;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.2);
+}
+
+/* Login + Contact Forms */
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    animation: fadeIn 1.3s;
+}
